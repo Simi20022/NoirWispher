@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BLACK TERMINAL // PROTOCOL X-VOID</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      font-family: 'Courier New', Courier, monospace;
+      color: #00ffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    #terminal {
+      width: 80%;
+      height: 60vh;
+      background: rgba(0, 0, 0, 0.7);
+      border: 2px solid #00ffff;
+      padding: 20px;
+      overflow-y: auto;
+      font-size: 1rem;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      box-shadow: 0 0 20px #00ffff;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #00ffff;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0ff;
+    }
+  </style>
+</head>
+<body>
+  <h1>BLACK TERMINAL // PROTOCOL X-VOID</h1>
+  <div id="terminal">*** INTRODU CODUL DE ACCES PENTRU A INTRA ÎN VAULT ***</div>
+  <button onclick="loadVault()">INTRĂ ÎN DOSAR</button>
+
+  <script>
+    const vaultData = `
+[FIȘIER #01] — AI Hustling
+Fă ghiduri cu ChatGPT și Canva. Branduiește-le ca dosare clasificate. Exemplu: "Manifestul Sugarului Modern" - 19€-49€
+
+[FIȘIER #02] — OnlyFans în Umbra Altora
+Creează reclame fake pentru creatori. Totul în Notion. Vinde-l ca sistem complet.
+
+[FIȘIER #03] — Reddit Cash
+Vinde idei, texte, lansări în r/FreelanceForHire cu PayPal direct.
+
+[FIȘIER #04] — Declarația Alpha
+PDF ritualic, stil jurământ secret. Vândut ca artefact.
+
+[FIȘIER #05] — Identitate Mascată
+Folosește ProtonMail, Firefox + Ghostery. Conturi anonime pe Gumroad.
+
+[FIȘIER #06] — Linkuri Fantomă:
+- pfpmaker.com
+- civitai.com
+- temp-mail.org
+- gumroad.com
+
+[FIȘIER #07] — POV Strategy
+TikTok POV: „Am găsit un stick într-un net café...” → suspans → link către produs complet
+
+*** Pentru acces complet: https://gumroad.com/tittoblackvault ***`;
+
+    function loadVault() {
+      const terminal = document.getElementById('terminal');
+      terminal.innerText = vaultData;
+    }
+  </script>
+</body>
+</html>
